@@ -13,7 +13,7 @@ weatherForm.addEventListener('submit', (e) => {
   if(!location){
     console.log('No location provided.')
   }else{
-    const query = 'http://localhost:3000/weather?address=' + location
+    const query = '/weather?address=' + location
   
     msgOne.textContent = 'Loading...'
     msgTwo.textContent = ''
